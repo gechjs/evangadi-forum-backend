@@ -93,7 +93,7 @@ const login = async (req, res) => {
       username,
     });
   } catch (error) {
-    res.send(error)
+    res.send('error', error)
   }
 };
 

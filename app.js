@@ -36,6 +36,7 @@ app.use("/api/questions", authMiddleware, questionsRoutes);
 const answerRoutes = require("./routes/answerRoutes.js");
 app.use("/api/answer", authMiddleware, answerRoutes);
 
+console.log('test')
 async function start() {
   try {
     await dbConnection.execute('select "test"');
@@ -43,7 +44,7 @@ async function start() {
     app.listen(port);
     console.log("listening on port " + port);
   } catch (err) {
-    console.log(err.message);
+    console.log(err);
   }
 }
 
