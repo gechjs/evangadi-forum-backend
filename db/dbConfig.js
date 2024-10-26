@@ -5,7 +5,7 @@ dotenv.config()
 const dbConnection = mysql2.createPool({
   user: process.env.USER,
   database: process.env.DATABASE,
-  host: "gizachewm.com",
+  host: "sql3.freesqldatabase.com",
   password: process.env.PASSWORD,
   connectionLimit: 10,
 
