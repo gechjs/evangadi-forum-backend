@@ -36,7 +36,7 @@ app.use("/api/questions", authMiddleware, questionsRoutes);
 const answerRoutes = require("./routes/answerRoutes.js");
 app.use("/api/answer", authMiddleware, answerRoutes);
 
-console.log('test 2')
+console.log('test')
 async function start() {
   try {
     await dbConnection.execute('select "test"');
